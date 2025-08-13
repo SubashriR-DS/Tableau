@@ -1,0 +1,1134 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.25.0710.1539                               -->
+<workbook original-version='18.1' source-build='2023.3.20 (20233.25.0710.1539)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='County Parameter' datatype='real' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='66.0'>
+        <calculation class='tableau' formula='66.0' />
+        <range granularity='5.0' max='100.0' min='1.0' />
+      </column>
+    </datasource>
+    <datasource caption='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000' inline='true' name='federated.01gqv5j18y9fcf1gnracw0sfo87m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000' name='textscan.1ynkc650r5872l1gr4fy90zbz6fi'>
+            <connection class='textscan' directory='C:/Users/subas/Documents/CloudyData/Tableau/Day 9 -StoryTelling/Employee' filename='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ynkc650r5872l1gr4fy90zbz6fi' name='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv' table='[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Area Type' ordinal='0' />
+            <column datatype='string' name='Area' ordinal='1' />
+            <column datatype='integer' name='NAICS' ordinal='2' />
+            <column datatype='string' name='NAICS Title' ordinal='3' />
+            <column datatype='integer' name='Year' ordinal='4' />
+            <column datatype='integer' name='Establishments' ordinal='5' />
+            <column datatype='integer' name='Average Employment' ordinal='6' />
+            <column datatype='real' name='Total Wage' ordinal='7' />
+            <column datatype='integer' name='Annual Average Salary                                                                                                          ' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ynkc650r5872l1gr4fy90zbz6fi' name='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv' table='[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Area Type' ordinal='0' />
+            <column datatype='string' name='Area' ordinal='1' />
+            <column datatype='integer' name='NAICS' ordinal='2' />
+            <column datatype='string' name='NAICS Title' ordinal='3' />
+            <column datatype='integer' name='Year' ordinal='4' />
+            <column datatype='integer' name='Establishments' ordinal='5' />
+            <column datatype='integer' name='Average Employment' ordinal='6' />
+            <column datatype='real' name='Total Wage' ordinal='7' />
+            <column datatype='integer' name='Annual Average Salary                                                                                                          ' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Area Type]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Area Type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAICS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NAICS]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>NAICS</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAICS Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAICS Title]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>NAICS Title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Establishments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Establishments]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Establishments</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Employment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average Employment]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Average Employment</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Wage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Wage]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Total Wage</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual Average Salary                                                                                                          </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Annual Average Salary                                                                                                          ]</local-name>
+            <parent-name>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv]</parent-name>
+            <remote-alias>Annual Average Salary                                                                                                          </remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Annual Average Salary' datatype='integer' name='[Annual Average Salary                                                                                                          ]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Area]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+        <semantic-values semantic-role='[County].[Name]'>
+          <semantic-value key='&quot;Albany-Rensselaer-Schenectady Counties&quot;' value='&quot;Albany&quot;' />
+          <semantic-value key='&quot;Albany-Schenectady-Troy Metro Area&quot;' value='&quot;Albany&quot;' />
+          <semantic-value key='&quot;Allegany-Cattaraugus&quot;' value='&quot;Allegany&quot;' />
+          <semantic-value key='&quot;Amsterdam, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Auburn, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;BALANCE OF STATE&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Batavia, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Binghamton Metro Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Broome-Tioga&quot;' value='&quot;Broome&quot;' />
+          <semantic-value key='&quot;Buffalo-Niagara Falls Metro Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Capital Region&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Cayuga-Cortland&quot;' value='&quot;Cayuga&quot;' />
+          <semantic-value key='&quot;Central New York Region&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Chemung-Schuyler-Steuben&quot;' value='&quot;Chemung&quot;' />
+          <semantic-value key='&quot;Chenango-Delaware-Otsego&quot;' value='&quot;Chenango&quot;' />
+          <semantic-value key='&quot;Clinton-Essex-Franklin-Hamilton&quot;' value='&quot;Clinton&quot;' />
+          <semantic-value key='&quot;Columbia-Greene&quot;' value='&quot;Columbia&quot;' />
+          <semantic-value key='&quot;Corning, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Cortland, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Dutchess-Putnam Metropolitan Division&quot;' value='&quot;Dutchess&quot;' />
+          <semantic-value key='&quot;Elmira Metro Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Finger Lakes Region&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Fulton-Montgomery-Schoharie&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Genesee-Livingston-Orleans-Wyoming&quot;' value='&quot;Genesee&quot;' />
+          <semantic-value key='&quot;Glens Falls Metro Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Gloversville, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Herkimer-Madison-Oneida&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Hudson Valley Region&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Hudson, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Ithaca Metro Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Jamestown-Dunkirk-Fredonia, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Jefferson-Lewis&quot;' value='&quot;Jefferson&quot;' />
+          <semantic-value key='&quot;Kingston Metro Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Long Island Region&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Malone, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Mohawk Valley Region&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Nassau-Suffolk Metropolitan Division&quot;' value='&quot;Nassau&quot;' />
+          <semantic-value key='&quot;New York City&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;New York City Region&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;New York State&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;North Country Region&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Ogdensburg-Massena, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Olean, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Oneonta, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Ontario-Seneca-Wayne-Yates&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Orange-Rockland-Westchester Metro Area&quot;' value='&quot;Orange&quot;' />
+          <semantic-value key='&quot;Plattsburgh, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Putnam-Balance Of Westchester&quot;' value='&quot;Putnam&quot;' />
+          <semantic-value key='&quot;Rochester Metro Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Saratoga-Warren-Washington&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Seneca Falls, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Southern Tier Region&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Syracuse Metro Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Utica-Rome Metro Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Watertown-Fort Drum Metro Area&quot;' value='&quot;New York&quot;' />
+          <semantic-value key='&quot;Western New York Region&quot;' value='&quot;New York&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='Naics' datatype='integer' name='[NAICS]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv' datatype='table' name='[__tableau_internal_object_id__].[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/subas/AppData/Local/Temp/TableauTemp/#TableauTemp_1balccf0d3756618zzt940yyolnl.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='08/11/2025 02:49:12 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000' increment-value='%null%' refresh-type='create' rows-inserted='184747' timestamp-start='2025-08-11 14:49:10.682' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Area Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Area Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area Type</remote-alias>
+              <ordinal>0</ordinal>
+              <family>P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area</remote-alias>
+              <ordinal>1</ordinal>
+              <family>P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>151</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAICS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NAICS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NAICS</remote-alias>
+              <ordinal>2</ordinal>
+              <family>P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>186</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAICS Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NAICS Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NAICS Title</remote-alias>
+              <ordinal>3</ordinal>
+              <family>P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>182</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>4</ordinal>
+              <family>P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Establishments</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Establishments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Establishments</remote-alias>
+              <ordinal>5</ordinal>
+              <family>P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4076</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average Employment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Average Employment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average Employment</remote-alias>
+              <ordinal>6</ordinal>
+              <family>P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13390</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Wage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Wage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Wage</remote-alias>
+              <ordinal>7</ordinal>
+              <family>P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>184747</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Annual Average Salary                                                                                                          </remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Annual Average Salary                                                                                                          ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Annual Average Salary                                                                                                          </remote-alias>
+              <ordinal>8</ordinal>
+              <family>P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>145043</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+        <semantic-value key='[County].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='&quot;New York&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv' id='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv_D97DEF9B603F4D47A0358B97D62EA201'>
+            <properties context=''>
+              <relation connection='textscan.1ynkc650r5872l1gr4fy90zbz6fi' name='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000.csv' table='[P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='Area Type' ordinal='0' />
+                  <column datatype='string' name='Area' ordinal='1' />
+                  <column datatype='integer' name='NAICS' ordinal='2' />
+                  <column datatype='string' name='NAICS Title' ordinal='3' />
+                  <column datatype='integer' name='Year' ordinal='4' />
+                  <column datatype='integer' name='Establishments' ordinal='5' />
+                  <column datatype='integer' name='Average Employment' ordinal='6' />
+                  <column datatype='real' name='Total Wage' ordinal='7' />
+                  <column datatype='integer' name='Annual Average Salary                                                                                                          ' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000' name='federated.01gqv5j18y9fcf1gnracw0sfo87m' />
+            <datasource name='Parameters' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='County Parameter' datatype='real' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='66.0'>
+              <calculation class='tableau' formula='66.0' />
+              <range granularity='5.0' max='100.0' min='1.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01gqv5j18y9fcf1gnracw0sfo87m'>
+            <column caption='Annual Average Salary' datatype='integer' name='[Annual Average Salary                                                                                                          ]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Area Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Area]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+              <semantic-values semantic-role='[County].[Name]'>
+                <semantic-value key='&quot;Albany-Rensselaer-Schenectady Counties&quot;' value='&quot;Albany&quot;' />
+                <semantic-value key='&quot;Albany-Schenectady-Troy Metro Area&quot;' value='&quot;Albany&quot;' />
+                <semantic-value key='&quot;Allegany-Cattaraugus&quot;' value='&quot;Allegany&quot;' />
+                <semantic-value key='&quot;Amsterdam, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Auburn, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;BALANCE OF STATE&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Batavia, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Binghamton Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Broome-Tioga&quot;' value='&quot;Broome&quot;' />
+                <semantic-value key='&quot;Buffalo-Niagara Falls Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Capital Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Cayuga-Cortland&quot;' value='&quot;Cayuga&quot;' />
+                <semantic-value key='&quot;Central New York Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Chemung-Schuyler-Steuben&quot;' value='&quot;Chemung&quot;' />
+                <semantic-value key='&quot;Chenango-Delaware-Otsego&quot;' value='&quot;Chenango&quot;' />
+                <semantic-value key='&quot;Clinton-Essex-Franklin-Hamilton&quot;' value='&quot;Clinton&quot;' />
+                <semantic-value key='&quot;Columbia-Greene&quot;' value='&quot;Columbia&quot;' />
+                <semantic-value key='&quot;Corning, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Cortland, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Dutchess-Putnam Metropolitan Division&quot;' value='&quot;Dutchess&quot;' />
+                <semantic-value key='&quot;Elmira Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Finger Lakes Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Fulton-Montgomery-Schoharie&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Genesee-Livingston-Orleans-Wyoming&quot;' value='&quot;Genesee&quot;' />
+                <semantic-value key='&quot;Glens Falls Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Gloversville, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Herkimer-Madison-Oneida&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Hudson Valley Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Hudson, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Ithaca Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Jamestown-Dunkirk-Fredonia, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Jefferson-Lewis&quot;' value='&quot;Jefferson&quot;' />
+                <semantic-value key='&quot;Kingston Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Long Island Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Malone, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Mohawk Valley Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Nassau-Suffolk Metropolitan Division&quot;' value='&quot;Nassau&quot;' />
+                <semantic-value key='&quot;New York City&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;New York City Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;New York State&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;North Country Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Ogdensburg-Massena, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Olean, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Oneonta, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Ontario-Seneca-Wayne-Yates&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Orange-Rockland-Westchester Metro Area&quot;' value='&quot;Orange&quot;' />
+                <semantic-value key='&quot;Plattsburgh, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Putnam-Balance Of Westchester&quot;' value='&quot;Putnam&quot;' />
+                <semantic-value key='&quot;Rochester Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Saratoga-Warren-Washington&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Seneca Falls, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Southern Tier Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Syracuse Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Utica-Rome Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Watertown-Fort Drum Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Western New York Region&quot;' value='&quot;New York&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Annual Average Salary                                                                                                          ]' derivation='Avg' name='[avg:Annual Average Salary                                                                                                          :qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Area Type]' derivation='None' name='[none:Area Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Area]' derivation='None' name='[none:Area:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area Type:nk]'>
+            <groupfilter count='[Parameters].[Parameter 1]' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Annual Average Salary                                                                                                          ])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:Area Type:nk]' member='&quot;County&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Longitude (generated)]' field-type='quantitative' max='-7812075.0655917032' min='-9204555.6936698873' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Latitude (generated)]' field-type='quantitative' max='5729360.5181518579' min='4826709.8730696738' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]' />
+              <text column='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]' />
+              <text column='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area:nk]' />
+              <geometry column='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='715' />
+                <format attr='maxheight' value='715' />
+                <format attr='minwidth' value='1103' />
+                <format attr='maxwidth' value='1103' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1103' />
+                <format attr='maxwidth' value='1103' />
+                <format attr='minheight' value='715' />
+                <format attr='maxheight' value='715' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Latitude (generated)]</rows>
+        <cols>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Longitude (generated)]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]</field>
+                  <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area:nk]</field>
+                  <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Geometry (generated)]</field>
+                  <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Latitude (generated)]</field>
+                  <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>83082.124930284437</value>
+                <value>&quot;New York County&quot;</value>
+                <value>&quot;MULTIPOLYGON(((-73.9087 40.8717,-73.9105 40.8741,-73.9152 40.8755,-73.9114 40.8793,-73.9071 40.8763,-73.907 40.8735,-73.9087 40.8717)),((-73.9264 40.8772,-73.923 40.8773,-73.9226 40.8744,-73.9205 40.873,-73.9164 40.8745,-73.9117 40.8733,-73.9112 40.8689,-73.9139 40.8648,-73.9171 40.8619,-73.9223 40.8558,-73.9299 40.8449,-73.9349 40.8352,-73.9352 40.8326,-73.9338 40.8182,-73.9344 40.8097,-73.9334 40.8073,-73.9299 40.8032,-73.9291 40.7966,-73.9301 40.7947,-73.9358 40.7911,-73.9398 40.7853,-73.9436 40.7827,-73.942 40.776,-73.9544 40.7622,-73.9588 40.7583,-73.9703 40.7453,-73.9729 40.7389,-73.9725 40.7358,-73.9742 40.7343,-73.9734 40.7311,-73.9714 40.7289,-73.9734 40.719,-73.9765 40.7119,-73.9781 40.7105,-73.9883 40.7091,-73.9887 40.71,-73.9982 40.7086,-74.012 40.7,-74.0151 40.7009,-74.0193 40.7061,-74.0167 40.7187,-74.0132 40.7183,-74.0114 40.7282,-74.0104 40.7391,-74.0097 40.7407,-74.0091 40.7478,-74.0099 40.7489,-74.0076 40.7543,-74.001 40.7635,-73.9999 40.7634,-73.9971 40.7687,-73.9756 40.7996,-73.9641 40.8158,-73.9578 40.8229,-73.9573 40.8271,-73.955 40.8274,-73.9502 40.8343,-73.9489 40.8387,-73.9462 40.8438,-73.947 40.8505,-73.9428 40.8527,-73.9325 40.8675,-73.9319 40.8709,-73.9291 40.8757,-73.9264 40.8772)),((-73.9158 40.7975,-73.9139 40.7947,-73.9153 40.7919,-73.9186 40.7894,-73.9242 40.7825,-73.9284 40.781,-73.935 40.783,-73.9358 40.7855,-73.9311 40.7908,-73.9297 40.7913,-73.9269 40.7954,-73.9274 40.7986,-73.9258 40.8018,-73.9226 40.8022,-73.9158 40.7975)),((-73.9444 40.7664,-73.9524 40.7573,-73.9572 40.7527,-73.9611 40.7508,-73.9446 40.7698,-73.9421 40.772,-73.9402 40.7709,-73.9444 40.7664)),((-74.0168 40.6933,-74.0122 40.6911,-74.0123 40.6892,-74.0235 40.684,-74.0264 40.6862,-74.0202 40.692,-74.0168 40.6933)))&quot;</value>
+                <value>40.788200000000003</value>
+                <value>-73.960499999999996</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='46' y='6' />
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878' fontsize='12'>Area: </run>
+              <run bold='true' fontsize='12'><![CDATA[<[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area:nk]> is the highest ]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878' fontsize='12'>Avg. Annual Average Salary: </run>
+              <run bold='true' fontsize='12'><![CDATA[<[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]</field>
+                      <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area:nk]</field>
+                      <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Geometry (generated)]</field>
+                      <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Latitude (generated)]</field>
+                      <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>83082.124930284437</value>
+                    <value>&quot;New York County&quot;</value>
+                    <value>&quot;MULTIPOLYGON(((-73.9087 40.8717,-73.9105 40.8741,-73.9152 40.8755,-73.9114 40.8793,-73.9071 40.8763,-73.907 40.8735,-73.9087 40.8717)),((-73.9264 40.8772,-73.923 40.8773,-73.9226 40.8744,-73.9205 40.873,-73.9164 40.8745,-73.9117 40.8733,-73.9112 40.8689,-73.9139 40.8648,-73.9171 40.8619,-73.9223 40.8558,-73.9299 40.8449,-73.9349 40.8352,-73.9352 40.8326,-73.9338 40.8182,-73.9344 40.8097,-73.9334 40.8073,-73.9299 40.8032,-73.9291 40.7966,-73.9301 40.7947,-73.9358 40.7911,-73.9398 40.7853,-73.9436 40.7827,-73.942 40.776,-73.9544 40.7622,-73.9588 40.7583,-73.9703 40.7453,-73.9729 40.7389,-73.9725 40.7358,-73.9742 40.7343,-73.9734 40.7311,-73.9714 40.7289,-73.9734 40.719,-73.9765 40.7119,-73.9781 40.7105,-73.9883 40.7091,-73.9887 40.71,-73.9982 40.7086,-74.012 40.7,-74.0151 40.7009,-74.0193 40.7061,-74.0167 40.7187,-74.0132 40.7183,-74.0114 40.7282,-74.0104 40.7391,-74.0097 40.7407,-74.0091 40.7478,-74.0099 40.7489,-74.0076 40.7543,-74.001 40.7635,-73.9999 40.7634,-73.9971 40.7687,-73.9756 40.7996,-73.9641 40.8158,-73.9578 40.8229,-73.9573 40.8271,-73.955 40.8274,-73.9502 40.8343,-73.9489 40.8387,-73.9462 40.8438,-73.947 40.8505,-73.9428 40.8527,-73.9325 40.8675,-73.9319 40.8709,-73.9291 40.8757,-73.9264 40.8772)),((-73.9158 40.7975,-73.9139 40.7947,-73.9153 40.7919,-73.9186 40.7894,-73.9242 40.7825,-73.9284 40.781,-73.935 40.783,-73.9358 40.7855,-73.9311 40.7908,-73.9297 40.7913,-73.9269 40.7954,-73.9274 40.7986,-73.9258 40.8018,-73.9226 40.8022,-73.9158 40.7975)),((-73.9444 40.7664,-73.9524 40.7573,-73.9572 40.7527,-73.9611 40.7508,-73.9446 40.7698,-73.9421 40.772,-73.9402 40.7709,-73.9444 40.7664)),((-74.0168 40.6933,-74.0122 40.6911,-74.0123 40.6892,-74.0235 40.684,-74.0264 40.6862,-74.0202 40.692,-74.0168 40.6933)))&quot;</value>
+                    <value>40.788200000000003</value>
+                    <value>-73.960499999999996</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-208' y='-18' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878' fontsize='12'>Area: </run>
+              <run bold='true' fontsize='12'><![CDATA[<[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area:nk]> is the lowest]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878' fontsize='12'>Avg. Annual Average Salary: </run>
+              <run bold='true' fontsize='12'><![CDATA[<[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]> in the data]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]</field>
+                      <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area:nk]</field>
+                      <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Geometry (generated)]</field>
+                      <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Latitude (generated)]</field>
+                      <field>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>25368.961481481481</value>
+                    <value>&quot;Hamilton County&quot;</value>
+                    <value>&quot;POLYGON((-74.8541 44.0701,-74.5351 44.0993,-74.2818 44.1206,-74.256 43.9698,-74.3368 43.9252,-74.2137 43.8108,-74.1535 43.8296,-74.1019 43.805,-74.0471 43.7963,-74.057 43.7445,-74.2146 43.7287,-74.1601 43.3715,-74.1401 43.254,-74.2242 43.2482,-74.2209 43.2214,-74.3224 43.2147,-74.3264 43.2416,-74.5346 43.2281,-74.7126 43.2861,-74.8677 43.3398,-74.7756 43.4867,-74.8541 44.0701))&quot;</value>
+                    <value>43.685600000000001</value>
+                    <value>-74.504999999999995</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='253' y='-37' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{B3B516D5-C060-4B15-90CD-E452B44667CD}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000' name='federated.01gqv5j18y9fcf1gnracw0sfo87m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01gqv5j18y9fcf1gnracw0sfo87m'>
+            <column caption='Annual Average Salary' datatype='integer' name='[Annual Average Salary                                                                                                          ]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Area]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+              <semantic-values semantic-role='[County].[Name]'>
+                <semantic-value key='&quot;Albany-Rensselaer-Schenectady Counties&quot;' value='&quot;Albany&quot;' />
+                <semantic-value key='&quot;Albany-Schenectady-Troy Metro Area&quot;' value='&quot;Albany&quot;' />
+                <semantic-value key='&quot;Allegany-Cattaraugus&quot;' value='&quot;Allegany&quot;' />
+                <semantic-value key='&quot;Amsterdam, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Auburn, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;BALANCE OF STATE&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Batavia, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Binghamton Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Broome-Tioga&quot;' value='&quot;Broome&quot;' />
+                <semantic-value key='&quot;Buffalo-Niagara Falls Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Capital Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Cayuga-Cortland&quot;' value='&quot;Cayuga&quot;' />
+                <semantic-value key='&quot;Central New York Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Chemung-Schuyler-Steuben&quot;' value='&quot;Chemung&quot;' />
+                <semantic-value key='&quot;Chenango-Delaware-Otsego&quot;' value='&quot;Chenango&quot;' />
+                <semantic-value key='&quot;Clinton-Essex-Franklin-Hamilton&quot;' value='&quot;Clinton&quot;' />
+                <semantic-value key='&quot;Columbia-Greene&quot;' value='&quot;Columbia&quot;' />
+                <semantic-value key='&quot;Corning, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Cortland, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Dutchess-Putnam Metropolitan Division&quot;' value='&quot;Dutchess&quot;' />
+                <semantic-value key='&quot;Elmira Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Finger Lakes Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Fulton-Montgomery-Schoharie&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Genesee-Livingston-Orleans-Wyoming&quot;' value='&quot;Genesee&quot;' />
+                <semantic-value key='&quot;Glens Falls Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Gloversville, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Herkimer-Madison-Oneida&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Hudson Valley Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Hudson, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Ithaca Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Jamestown-Dunkirk-Fredonia, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Jefferson-Lewis&quot;' value='&quot;Jefferson&quot;' />
+                <semantic-value key='&quot;Kingston Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Long Island Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Malone, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Mohawk Valley Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Nassau-Suffolk Metropolitan Division&quot;' value='&quot;Nassau&quot;' />
+                <semantic-value key='&quot;New York City&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;New York City Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;New York State&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;North Country Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Ogdensburg-Massena, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Olean, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Oneonta, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Ontario-Seneca-Wayne-Yates&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Orange-Rockland-Westchester Metro Area&quot;' value='&quot;Orange&quot;' />
+                <semantic-value key='&quot;Plattsburgh, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Putnam-Balance Of Westchester&quot;' value='&quot;Putnam&quot;' />
+                <semantic-value key='&quot;Rochester Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Saratoga-Warren-Washington&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Seneca Falls, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Southern Tier Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Syracuse Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Utica-Rome Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Watertown-Fort Drum Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Western New York Region&quot;' value='&quot;New York&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Area]' derivation='None' name='[none:Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Annual Average Salary                                                                                                          ]' derivation='Sum' name='[sum:Annual Average Salary                                                                                                          :qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[sum:Annual Average Salary                                                                                                          :qk]</rows>
+        <cols>([federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area:nk] * [federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Year:qk])</cols>
+      </table>
+      <simple-id uuid='{53E42C47-75D8-4F30-8A6E-5DA13FC33147}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='P1-quarterly-census-of-employment-and-wages-annual-data-beginning-2000' name='federated.01gqv5j18y9fcf1gnracw0sfo87m' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='County Parameter' datatype='real' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='66.0'>
+              <calculation class='tableau' formula='66.0' />
+              <range granularity='5.0' max='100.0' min='1.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.01gqv5j18y9fcf1gnracw0sfo87m'>
+            <column caption='Annual Average Salary' datatype='integer' name='[Annual Average Salary                                                                                                          ]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Area]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+              <semantic-values semantic-role='[County].[Name]'>
+                <semantic-value key='&quot;Albany-Rensselaer-Schenectady Counties&quot;' value='&quot;Albany&quot;' />
+                <semantic-value key='&quot;Albany-Schenectady-Troy Metro Area&quot;' value='&quot;Albany&quot;' />
+                <semantic-value key='&quot;Allegany-Cattaraugus&quot;' value='&quot;Allegany&quot;' />
+                <semantic-value key='&quot;Amsterdam, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Auburn, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;BALANCE OF STATE&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Batavia, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Binghamton Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Broome-Tioga&quot;' value='&quot;Broome&quot;' />
+                <semantic-value key='&quot;Buffalo-Niagara Falls Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Capital Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Cayuga-Cortland&quot;' value='&quot;Cayuga&quot;' />
+                <semantic-value key='&quot;Central New York Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Chemung-Schuyler-Steuben&quot;' value='&quot;Chemung&quot;' />
+                <semantic-value key='&quot;Chenango-Delaware-Otsego&quot;' value='&quot;Chenango&quot;' />
+                <semantic-value key='&quot;Clinton-Essex-Franklin-Hamilton&quot;' value='&quot;Clinton&quot;' />
+                <semantic-value key='&quot;Columbia-Greene&quot;' value='&quot;Columbia&quot;' />
+                <semantic-value key='&quot;Corning, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Cortland, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Dutchess-Putnam Metropolitan Division&quot;' value='&quot;Dutchess&quot;' />
+                <semantic-value key='&quot;Elmira Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Finger Lakes Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Fulton-Montgomery-Schoharie&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Genesee-Livingston-Orleans-Wyoming&quot;' value='&quot;Genesee&quot;' />
+                <semantic-value key='&quot;Glens Falls Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Gloversville, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Herkimer-Madison-Oneida&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Hudson Valley Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Hudson, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Ithaca Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Jamestown-Dunkirk-Fredonia, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Jefferson-Lewis&quot;' value='&quot;Jefferson&quot;' />
+                <semantic-value key='&quot;Kingston Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Long Island Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Malone, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Mohawk Valley Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Nassau-Suffolk Metropolitan Division&quot;' value='&quot;Nassau&quot;' />
+                <semantic-value key='&quot;New York City&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;New York City Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;New York State&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;North Country Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Ogdensburg-Massena, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Olean, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Oneonta, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Ontario-Seneca-Wayne-Yates&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Orange-Rockland-Westchester Metro Area&quot;' value='&quot;Orange&quot;' />
+                <semantic-value key='&quot;Plattsburgh, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Putnam-Balance Of Westchester&quot;' value='&quot;Putnam&quot;' />
+                <semantic-value key='&quot;Rochester Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Saratoga-Warren-Washington&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Seneca Falls, NY Micropolitan Statistical Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Southern Tier Region&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Syracuse Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Utica-Rome Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Watertown-Fort Drum Metro Area&quot;' value='&quot;New York&quot;' />
+                <semantic-value key='&quot;Western New York Region&quot;' value='&quot;New York&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Annual Average Salary                                                                                                          ]' derivation='Avg' name='[avg:Annual Average Salary                                                                                                          :qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Area]' derivation='None' name='[none:Area:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area:nk]'>
+            <groupfilter count='[Parameters].[Parameter 1]' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Annual Average Salary                                                                                                          ])' function='order' user:ui-marker='order'>
+                <groupfilter expression='CONTAINS(LOWER([Area]), LOWER(&apos;County&apos;))' function='filter' user:ui-enumeration='inclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='County' user:ui-pattern_type='contains'>
+                  <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Albany County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Albany-Rensselaer-Schenectady Counties&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Albany-Schenectady-Troy Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Allegany County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Allegany-Cattaraugus&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Amsterdam, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Auburn, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;BALANCE OF STATE&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Batavia, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Binghamton Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Bronx County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Broome County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Broome-Tioga&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Buffalo-Niagara Falls Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Capital Region&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Cattaraugus County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Cayuga County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Cayuga-Cortland&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Central New York Region&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Chautauqua&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Chautauqua County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Chemung County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Chemung-Schuyler-Steuben&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Chenango County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Chenango-Delaware-Otsego&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Clinton County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Clinton-Essex-Franklin-Hamilton&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Columbia County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Columbia-Greene&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Corning, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Cortland County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Cortland, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Delaware County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Dutchess&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Dutchess County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Dutchess-Putnam Metropolitan Division&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Elmira Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Erie&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Erie County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Essex County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Finger Lakes Region&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Franklin County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Fulton County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Fulton-Montgomery-Schoharie&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Genesee County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Genesee-Livingston-Orleans-Wyoming&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Glens Falls Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Gloversville, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Greene County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Hamilton County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Herkimer County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Herkimer-Madison-Oneida&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Hudson Valley Region&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Hudson, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Ithaca Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Jamestown-Dunkirk-Fredonia, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Jefferson County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Jefferson-Lewis&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Kings County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Kingston Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Lewis County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Livingston County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Long Island Region&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Madison County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Malone, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Mohawk Valley Region&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Monroe&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Monroe County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Montgomery County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Nassau County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Nassau-Suffolk Metropolitan Division&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;New York City&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;New York City Region&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;New York County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;New York State&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Niagara&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Niagara County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;North Country Region&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Ogdensburg-Massena, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Olean, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Oneida County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Oneonta, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Onondaga&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Onondaga County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Ontario County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Ontario-Seneca-Wayne-Yates&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Orange&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Orange County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Orange-Rockland-Westchester Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Orleans County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Oswego&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Oswego County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Otsego County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Plattsburgh, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Putnam County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Putnam-Balance Of Westchester&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Queens County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Rensselaer County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Richmond County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Rochester Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Rockland&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Rockland County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Saratoga County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Saratoga-Warren-Washington&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Schenectady County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Schoharie County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Schuyler County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Seneca County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Seneca Falls, NY Micropolitan Statistical Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Southern Tier Region&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;St. Lawrence&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;St. Lawrence County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Steuben County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Suffolk&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Suffolk County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Sullivan&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Sullivan County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Syracuse Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Tioga County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Tompkins&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Tompkins County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Ulster&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Ulster County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Utica-Rome Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Warren County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Washington County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Watertown-Fort Drum Metro Area&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Wayne County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Westchester County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Western New York Region&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Wyoming County&quot;' />
+                    <groupfilter function='member' level='[none:Area:nk]' member='&quot;Yates County&quot;' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]</rows>
+        <cols>[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area:nk]</cols>
+      </table>
+      <simple-id uuid='{ECC6ABA7-38E5-4D6F-88AB-D903F1CB8156}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='260'>
+            <card param='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[none:Area Type:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{632B8A9B-079C-4218-89C1-5CE9154B3DFC}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{836CED2C-D97C-4699-9BC9-90E8E1F6A5FF}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01gqv5j18y9fcf1gnracw0sfo87m].[avg:Annual Average Salary                                                                                                          :qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3663D0C8-5F69-4DB3-B0DA-3E89EE8634E4}' />
+    </window>
+  </windows>
+</workbook>
